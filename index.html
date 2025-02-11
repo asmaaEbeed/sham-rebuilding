@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>منصة الشام للإعمار</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="libs/animate/animate.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .brand-text {
+        margin-top: 120px;
+      }
+      .navbar {
+        height: 70px; /* Adjust the height */
+        border-bottom: 5px solid #329959; /* Add green line to the navbar */
+      }
+      .navbar-brand img {
+        height: 40px; /* Adjust the logo size */
+      }
+      .navbar-nav .nav-link {
+        line-height: 50px; /* Align menu items with the logo */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="height: 70px"
+    >
+      <!-- Ensure the height is set here as well -->
+      <div class="container position-relative">
+        <a class="navbar-brand position-absolute" href="#">
+          <img
+            src="./images/Logos/PNG1.png"
+            alt="Sham Logo"
+            class="logo"
+          />
+          <!-- Ensure the logo size is set here as well -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#rebuilding">شو يعني إعادة الاعمار؟</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >منصة لبلادنا</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#goals">الهدف والبوصلة</a>
+                </li>
+                <li><a class="dropdown-item" href="#about">الخبراء </a></li>
+                <li><a class="dropdown-item" href="#vision">الاقسام</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >برامجنا</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item disabled fw-bold" href="#gaza">غزة</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#gaza-damage"
+                    >مشروع إعمار غزة</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#gaza-reconstruction"
+                    >الاستبيانات</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item disabled fw-bold">سوريا</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#syria-damage">البرنامج</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#syria-reconstruction"
+                    >الاوراق</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >شركائنا</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Logo1</a></li>
+                <li><a class="dropdown-item" href="#">Logo2</a></li>
+                <li><a class="dropdown-item" href="#">Logo3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Remove the horizontal line -->
+    <!-- <div class="horizontal-line" style="margin-top: 56px;"></div> -->
+    <!-- Hero Slider Section -->
+    <section class="hero-slider">
+      <div class="slider-container">
+        <div class="brand-text">
+          <span class="ar">منصة الشام للإعمار</span>
+          <span class="en">Sham Rebuilding Platform</span>
+        </div>
+        <div class="slider-content">
+          <h1 class="slider-title">
+            ...فالنهوض لايبنيه أفراد أو أحزاب بل تحقق النهضة بالجموع الشعبية
+            الواعية
+          </h1>
+          <div class="author">
+            <p class="author-name">د. محمد عثمان البارودي</p>
+            <p class="author-title">رئيس منصة الشام للإعمار</p>
+          </div>
+        </div>
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/slider-1.jpeg"
+                class="d-block w-100"
+                alt="Gaza Project 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/slider-2.jpeg"
+                class="d-block w-100"
+                alt="Gaza Project 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/slider-3.jpeg"
+                class="d-block w-100"
+                alt="Gaza Project 3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="video-overlay">
+          <video controls>
+            <source src="./videos/home.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is Rebuilding Section -->
+    <section class="rebuilding-section" id="rebuilding">
+      <div class="container-lg">
+        <h2 class="section-title mb-5">شو يعني إعادة الإعمار؟</h2>
+        <div class="row mt-5 pt-5">
+          <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.1s">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/slider-rebuilding-1.jpeg"
+                    class="d-block w-100 m-xl-0 m-auto"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/slider-rebuilding-2.jpeg"
+                    class="d-block w-100 m-xl-0 m-auto"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/slider-rebuilding-3.jpeg"
+                    class="d-block w-100 m-xl-0 m-auto"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-5 text-center wow fadeInUp" data-wow-delay="0.1s">
+            <p class="">إعادة الإعمار ليست مجرد إزالة الأنقاض بناء المدن...</p>
+            <p class="mb-4">بل هي عملية شاملة تهدف لبناء</p>
+            <div class="row mt-5 mx-0">
+              <div class="col-sm-4 px-xl-2 px-1">
+                <div class="point h-100 text-center px-1">
+                  <p class="mt--40"><i class="bx bx-user bx-sm bx-border-circle bg-white "></i></p>
+                  <h6>الإنسان</h6>
+                </div>
+              </div>
+              <div class="col-sm-4 px-xl-2 px-1">
+                <div class="point h-100 text-center px-1">
+                  <p class="mt--40"><i class="bx bx-group bx-sm bx-border-circle bg-white "></i></p>
+                  <h6>المجتمع</h6>
+                </div>
+              </div>
+              <div class="col-sm-4 px-xl-2 px-1">
+                <div class="point h-100 text-center px-1">
+                  <p class="mt--40"><i class="bx bx-buildings bx-sm bx-border-circle bg-white "></i></p>
+                  <h6>مؤسسات الدولة</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.1s">
+            <video controls autoplay muted class="w-100">
+              <source src="./videos/home.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <!-- <div class="rebuilding-content">
+          <p>
+            إعادة الإعمار ليست مجرد إزالة الأنقاض وإعادة البناء... بل تحقيق
+            المنصة بالمجموع السعة الأربعة
+          </p>
+          <div class="rebuilding-points">
+            <div class="point">
+              <h3>الإنسان</h3>
+              <p>إعادة بناء الإنسان نفسياً واجتماعياً</p>
+            </div>
+            <div class="point">
+              <h3>المجتمع</h3>
+              <p>إعادة بناء المجتمع وترميم النسيج الاجتماعي</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Platform Goals Section -->
+    <section class="goals-section" id="goals">
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 text-center mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="bg-light-green p-3 h-lg-100 rounded-3">
+
+                    <h2 class="section-title">هدف المنصة</h2>
+                    <div class="goal-content">
+                      <p class="lead lh-lg">
+                        المساهمة الفعالة في جلب الاستقرار والسلام والتنمية المستدامة لبلادنا وبخبرات ابنائنا                  </p>
+                      <!-- <ul class="goal-list">
+                        <li><span>القيادة والحكومة السورية</span></li>
+                        <li><span>المجتمعات المحلية</span></li>
+                        <li><span>المؤسسات الدولية</span></li>
+                        <li><span>منظمات المجتمع المدني المحلية والدولية</span></li>
+                        <li><span>المراكز البحثية</span></li>
+                        <li><span>الدول المانحة</span></li>
+                      </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center mb-4 d-flex wow fadeInUp">
+                <div class="image-container h-lg-100 w-100">
+                    <img src="./images/slider-2.jpeg" alt="" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="col-lg-4 text-center mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="bg-light-green p-3 h-lg-100 rounded-3">
+                    
+                    <h2 class="section-title"> بوصلتنا</h2>
+                    <div class="goal-content">
+                      <p class="lead fst-italic lh-lg">
+                        <i class="bx bxs-quote-left bx-sm text-secondary"></i>
+                       تعتمد المنصة علي تقوية الانسانوالاسرة والمجتمعات المحلية في ترتيب استحقاقات الاعمار والدفع باتجاه مصالحهم التنموية
+                       <i class="bx bxs-quote-right bx-sm text-secondary"></i>  
+                    </p>
+                      <p>
+                        د. سلام إدلبي
+                        <span class="d-block">  رئيس قسم المجتمع بالمنصة</span>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="section-title">من نحن</h2>
+          </div>
+          <div class="col-md-6">
+            <p class="lead">
+              منصة الشام للإعمار هي مبادرة تهدف إلى المساهمة الفعالة في جلب
+              الاستقرار والسلام والتنمية المستدامة لسوريا من خلال التحضير
+              لبرنامج إعادة الإعمار، وذلك بالتشارك والتعاون مع القيادة والحكومة
+              السورية، المجتمعات المحلية، المؤسسات الدولية، منظمات المجتمع
+              المدني المحلية والدولية، المراكز البحثية، والدول المانحة.
+            </p>
+            <p>
+              نحن نؤمن بأن إعادة الإعمار ليست مجرد إزالة الأنقاض وبناء المدن، بل
+              هي عملية شاملة تهدف إلى:
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-check text-primary me-2"></i> بناء الإنسان
+                نفسياً وعلمياً واقتصادياً
+              </li>
+              <li>
+                <i class="fas fa-check text-primary me-2"></i> تحقيق المصالحة
+                المجتمعية والعدالة الانتقالية
+              </li>
+              <li>
+                <i class="fas fa-check text-primary me-2"></i> إعادة بناء
+                المؤسسات وتعزيز الكفاءة
+              </li>
+              <li>
+                <i class="fas fa-check text-primary me-2"></i> تطوير البنية
+                التحتية والخدمات الأساسية
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/about.jpg"
+              alt="عن المنصة"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="section-title">برامجنا وخدماتنا</h2>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">
+                  <i class="fas fa-users text-primary me-2"></i>
+                  العمل مع المجتمعات المحلية
+                </h3>
+                <p class="card-text">
+                  إجراء استبيانات وتحليل احتياجات المجتمع، وتحديد الميزة
+                  التنافسية لكل منطقة وإعداد برامج للتنمية الإقليمية.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">
+                  <i class="fas fa-globe text-primary me-2"></i>
+                  التواصل مع النخب في الخارج
+                </h3>
+                <p class="card-text">
+                  ربط الكفاءات السورية في المهجر مع فرص المساهمة في إعادة
+                  الإعمار وتسهيل مشاريعهم التنموية.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">
+                  <i class="fas fa-chart-bar text-primary me-2"></i>
+                  مسح وتقييم الأضرار
+                </h3>
+                <p class="card-text">
+                  توثيق وتقييم الأضرار باستخدام التقنيات الحديثة، وإعداد دراسات
+                  اقتصادية لتقدير حجم الخسائر.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+      <div class="container">
+        <div class="col-12 text-center mb-4">
+          <h2 class="section-title">فريقنا</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h3 class="h5">د. محمد عثمان البارودي</h3>
+                <p class="text-muted">رئيس المنصة ورئيس قسم العلاقات الدولية</p>
+                <p class="small">
+                  حاصل على دكتوراه في العلاقات الدولية، وصفه روتليدج بأنه أحد
+                  "المفكرين الأكثر تأثيراً"
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h3 class="h5">م. خالد تميم نصار</h3>
+                <p class="text-muted">نائب الرئيس ومدير مشروع سوريا</p>
+                <p class="small">
+                  مهندس معماري ومخطط حضري متخصص في إعادة إعمار المجتمعات
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h3 class="h5">د. سلام إدلبي</h3>
+                <p class="text-muted">مديرة قسم المجتمع</p>
+                <p class="small">
+                  متخصصة في علوم التربية المجتمعية وعلم النفس التربوي
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="section-title">تواصل معنا</h2>
+          </div>
+          <div class="col-md-6">
+            <p class="lead">
+              إذا كنت ترغب في التواصل معنا، يرجى ملء النموذج أدناه:
+            </p>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">الاسم:</label>
+                <input type="text" class="form-control" id="name" name="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">الرسالة:</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">إرسال</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <p class="lead">يمكنك أيضاً التواصل معنا عبر:</p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-envelope me-2"></i> info@shamplatform.org
+              </li>
+              <li><i class="fas fa-map-marker-alt me-2"></i> سوريا</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>تواصل معنا</h5>
+            <p>
+              <i class="fas fa-envelope me-2"></i> info@shamplatform.org<br />
+              <i class="fas fa-map-marker-alt me-2"></i> سوريا
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">الرئيسية</a></li>
+              <li><a href="#about" class="text-light">من نحن</a></li>
+              <li><a href="#services" class="text-light">خدماتنا</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>تابعنا</h5>
+            <div class="social-links">
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-2"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              &copy; 2025 منصة الشام للإعمار. جميع الحقوق محفوظة
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.js">
+    </script>
+    <script src="libs/wow/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </body>
+</html>
