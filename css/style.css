@@ -645,6 +645,7 @@ footer {
   width: 120px;
   height: 150px;
   align-content: center;
+  place-content: center;
   transform: translateY(0%);
   transition: all 0.3s ease;
 }
