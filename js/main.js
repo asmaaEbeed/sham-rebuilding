@@ -1,31 +1,31 @@
-// Prevent inspect or download
-function alertMessage() {
-    alert("This feature is disabled. Inspecting elements is restricted as the website is still under development")
-}
-document.addEventListener('contextmenu', (event) => {event.preventDefault(); alertMessage()});
+// // Prevent inspect or download
+// function alertMessage() {
+//     alert("This feature is disabled. Inspecting elements is restricted as the website is still under development")
+// }
+// document.addEventListener('contextmenu', (event) => {event.preventDefault(); alertMessage()});
 
-document.addEventListener('keydown', (event) => {
-    // Prevent F12, Ctrl+Shift+I/J/C, Ctrl+U, and Ctrl+S
-    if (
-      event.key === 'F12' || 
-      (event.ctrlKey && event.shiftKey && ['I', 'J', 'C'].includes(event.key)) ||
-      (event.ctrlKey && (event.key === 'U' || event.key === 's'))
-    ) {
-        event.preventDefault();
-        event.stopPropagation();
-        alertMessage()
-    }
-});
+// document.addEventListener('keydown', (event) => {
+//     // Prevent F12, Ctrl+Shift+I/J/C, Ctrl+U, and Ctrl+S
+//     if (
+//       event.key === 'F12' || 
+//       (event.ctrlKey && event.shiftKey && ['I', 'J', 'C'].includes(event.key)) ||
+//       (event.ctrlKey && (event.key === 'U' || event.key === 's'))
+//     ) {
+//         event.preventDefault();
+//         event.stopPropagation();
+//         alertMessage()
+//     }
+// });
 
-setInterval(() => {
-    const devtools = /./;
-    devtools.toString = function () {
-        return 'devtools';
-    };
-    if (devtools.toString() !== 'devtools') {
-        alert('Developer tools are not allowed!');
-    }
-}, 1000);
+// setInterval(() => {
+//     const devtools = /./;
+//     devtools.toString = function () {
+//         return 'devtools';
+//     };
+//     if (devtools.toString() !== 'devtools') {
+//         alert('Developer tools are not allowed!');
+//     }
+// }, 1000);
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
