@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-// document.addEventListener("DOMContentLoaded", function () {
-//     let video = document.getElementById("sham-video");
-//     video.play().catch(error => console.log("Autoplay blocked:", error));
-//   });
+document.addEventListener("DOMContentLoaded", function () {
+    let video = document.getElementById("sham-video");
+    video.play().catch(error => console.log("Autoplay blocked:", error));
+  });
