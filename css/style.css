@@ -13,6 +13,9 @@ body {
 .justify-self-center {
   justify-self: center;
 }
+.fs-7 {
+  font-size: 0.85rem;
+}
 
 /* Navbar Styles */
 .navbar {
@@ -292,6 +295,18 @@ rgba(255, 255, 255, 0.68) 100%);
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+#yasser .image-container {
+  background-image: url('../images/message-yasser.jpg');
+  background-size: cover;
+}
+#salam .image-container {
+  background-image: url('../images/message-salam.jpg');
+  background-size: cover;
+}
+#osman .image-container {
+  background-image: url('../images/message-osman.jpg');
+  background-size: cover;
 }
 
 .goals-section .col-lg-4 img {
@@ -734,6 +749,14 @@ text-decoration: none;
   background: #fff;
   border-radius: 30px;
   margin: 7px;
+}
+.to-top {
+  bottom: 17px;
+  right: 10px !important;
+  padding: 8px;
+  background-color: var(--primary-green) !important;
+  color: #fff;
+  z-index: 20;
 }
 /* Responsive Adjustments */
 @media (max-width: 767px) {
