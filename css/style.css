@@ -212,6 +212,7 @@ body {
 .slider-content {
   position: absolute;
   bottom: 33%;
+  top: auto;
   right: 10%;
   z-index: 2;
   max-width: 50%;
@@ -254,7 +255,7 @@ body {
 /* Video Overlay */
 .video-overlay {
   position: absolute;
-  top: 400px;
+  top: 40%;
   left: 5%;
   width: 400px;
   z-index: 2;
@@ -800,6 +801,7 @@ footer {
   .insta-video {
     height: 20%;
   }
+
 }
 @media (min-width: 769px) {
   .h-lg-100 {
@@ -822,6 +824,18 @@ footer {
     width: 100%;
     text-align: center;
     margin: 0 auto;
+  }
+  .video-overlay {
+    position: absolute;
+    top: 51%;
+    left: 13%;
+    width: 400px;
+    z-index: 2;
+  }
+  .slider-content {
+    max-width: 70%;
+    bottom: auto;
+    top: 20%;
   }
 }
 
