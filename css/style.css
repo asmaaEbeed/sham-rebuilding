@@ -828,13 +828,13 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
-  .video-overlay {
-    position: absolute;
-    top: 57%;
-    left: 6%;
-    width: 261px;
-    z-index: 2;
-}
+      .video-overlay {
+        position: absolute;
+        top: 57%;
+        left: 6%;
+        width: 369px;
+        z-index: 2;
+    }
   .slider-content {
     max-width: 70%;
     bottom: auto;
