@@ -323,6 +323,14 @@ body {
   background-image: url("../images/message-osman.jpg");
   background-size: cover;
 }
+#zayd .image-container {
+  background-image: url("../images/message-zayd.jpg");
+  background-size: cover;
+}
+#wael .image-container {
+  background-image: url("../images/message-wael.jpg");
+  background-size: cover;
+}
 
 .goals-section .col-lg-4 img {
   height: 100%;
