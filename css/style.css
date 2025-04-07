@@ -1,18 +1,22 @@
 /* Custom Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap");
+
 /* primary color */
 :root {
   --primary-green: #329959;
   --primary-green-light: rgba(50, 153, 90, 0.29);
 }
+
 /* General Styles */
 body {
   font-family: "Cairo", sans-serif;
   padding-top: 0;
 }
+
 .justify-self-center {
   justify-self: center;
 }
+
 .fs-7 {
   font-size: 0.85rem;
 }
@@ -26,57 +30,59 @@ body {
   transition: all 0.3s ease;
   z-index: 1000;
 }
+
 .brand-text {
   margin-top: 120px;
 }
+
 .navbar {
-  height: 70px; /* Adjust the height */
-  border-bottom: 5px solid var(--primary-green); /* Add green line to the navbar */
+  height: 70px;
+  /* Adjust the height */
+  border-bottom: 5px solid var(--primary-green);
+  /* Add green line to the navbar */
 }
+
 .nav-item {
   padding: 10px 5px 3px;
 }
-.navbar-brand img {
-  height: 40px; /* Adjust the logo size */
-}
-.bg-white-soft {
-  background: -webkit-linear-gradient(
-    to bottom,
-    rgba(41, 137, 216, 0) 0%,
-    rgba(104, 171, 227, 0) 30%,
-    rgba(181, 214, 241, 0) 60%,
-    rgba(255, 255, 255, 0.5) 70%,
-    rgba(255, 255, 255, 0.68) 100%
-  );
-  background: -moz-linear-gradient(
-    to bottom,
-    rgba(41, 137, 216, 0) 0%,
-    rgba(104, 171, 227, 0) 30%,
-    rgba(181, 214, 241, 0) 60%,
-    rgba(255, 255, 255, 0.5) 70%,
-    rgba(255, 255, 255, 0.68) 100%
-  );
-  background: -o-linear-gradient(
-    to bottom,
-    rgba(41, 137, 216, 0) 0%,
-    rgba(104, 171, 227, 0) 30%,
-    rgba(181, 214, 241, 0) 60%,
-    rgba(255, 255, 255, 0.5) 70%,
-    rgba(255, 255, 255, 0.68) 100%
-  );
 
-  background: linear-gradient(
-    to bottom,
-    rgba(41, 137, 216, 0) 0%,
-    rgba(104, 171, 227, 0) 30%,
-    rgba(181, 214, 241, 0) 60%,
-    rgba(255, 255, 255, 0.5) 70%,
-    rgba(255, 255, 255, 0.68) 100%
-  );
+.navbar-brand img {
+  height: 40px;
+  /* Adjust the logo size */
+}
+
+.bg-white-soft {
+  background: -webkit-linear-gradient(to bottom,
+      rgba(41, 137, 216, 0) 0%,
+      rgba(104, 171, 227, 0) 30%,
+      rgba(181, 214, 241, 0) 60%,
+      rgba(255, 255, 255, 0.5) 70%,
+      rgba(255, 255, 255, 0.68) 100%);
+  background: -moz-linear-gradient(to bottom,
+      rgba(41, 137, 216, 0) 0%,
+      rgba(104, 171, 227, 0) 30%,
+      rgba(181, 214, 241, 0) 60%,
+      rgba(255, 255, 255, 0.5) 70%,
+      rgba(255, 255, 255, 0.68) 100%);
+  background: -o-linear-gradient(to bottom,
+      rgba(41, 137, 216, 0) 0%,
+      rgba(104, 171, 227, 0) 30%,
+      rgba(181, 214, 241, 0) 60%,
+      rgba(255, 255, 255, 0.5) 70%,
+      rgba(255, 255, 255, 0.68) 100%);
+
+  background: linear-gradient(to bottom,
+      rgba(41, 137, 216, 0) 0%,
+      rgba(104, 171, 227, 0) 30%,
+      rgba(181, 214, 241, 0) 60%,
+      rgba(255, 255, 255, 0.5) 70%,
+      rgba(255, 255, 255, 0.68) 100%);
   border-radius: 16px;
 }
+
 .navbar-nav .nav-link {
-  line-height: 50px; /* Align menu items with the logo */
+  line-height: 50px;
+  /* Align menu items with the logo */
 }
 
 .navbar.scrolled {
@@ -89,6 +95,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .navbar-brand:focus-visible {
   outline: 0;
 }
@@ -98,6 +105,7 @@ body {
   width: auto;
   margin-bottom: 5px;
 }
+
 .dropdown-menu.show {
   text-align: right;
 }
@@ -311,24 +319,39 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
 #yasser .image-container {
   background-image: url("../images/message-yasser.jpg");
   background-size: cover;
 }
+
 #salam .image-container {
   background-image: url("../images/message-salam.jpg");
   background-size: cover;
 }
+
 #osman .image-container {
   background-image: url("../images/message-osman.jpg");
   background-size: cover;
 }
+
 #zayd .image-container {
   background-image: url("../images/message-zayd.jpg");
   background-size: cover;
 }
+
 #wael .image-container {
   background-image: url("../images/message-wael.jpg");
+  background-size: cover;
+}
+
+#feras .image-container {
+  /* background-image: url("../images/message-feras.jpg"); */
+  background-size: cover;
+}
+
+#ammar .image-container {
+  background-image: url("../images/message-ammar.jpg");
   background-size: cover;
 }
 
@@ -375,7 +398,7 @@ body {
   transform: rotate(45deg);
 }
 
-.goal-list li > span::before {
+.goal-list li>span::before {
   content: "";
   position: absolute;
   right: 8px;
@@ -621,9 +644,11 @@ footer {
   padding: 10px 20px;
   border-radius: 5px;
 }
+
 .mt--40 {
   margin-top: -40px;
 }
+
 .bg-light-green {
   background-color: #e9f3e9ca;
 }
@@ -632,13 +657,16 @@ footer {
   width: 130px;
   height: auto;
 }
+
 .navbar-brand {
   top: -13px;
 }
+
 @media (max-width: 992px) {
   .navbar-brand {
     top: -34px !important;
   }
+
   .navbar-nav {
     background-color: rgba(255, 255, 255, 0.9);
     border: none;
@@ -648,18 +676,22 @@ footer {
     text-align: right;
   }
 }
-.navbar > .container {
+
+.navbar>.container {
   display: block !important;
   text-align: left;
 }
+
 .red-dots {
   width: 35px;
   margin: 8px;
 }
+
 .red-dots-sm {
   width: 20px;
   margin: 3px;
 }
+
 .img-user {
   width: 120px;
   height: 120px;
@@ -667,6 +699,7 @@ footer {
   border-radius: 60px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .team-border {
   border-right: 5px solid var(--primary-green) !important;
 }
@@ -679,10 +712,12 @@ footer {
   width: 15px;
   height: 15px;
 }
+
 .reverse-pulsating-circle {
   left: auto !important;
   right: -31px !important;
 }
+
 .pulsating-circle:before {
   content: "";
   position: relative;
@@ -710,6 +745,7 @@ footer {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
 }
+
 .oval {
   border-radius: 50%;
   border: 1px solid #ddd;
@@ -720,14 +756,17 @@ footer {
   transition: all 0.3s ease;
   padding-top: 3%;
 }
+
 .oval:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px var(--primary-green-light);
 }
+
 @keyframes pulse-ring {
   0% {
     transform: scale(0.33);
   }
+
   80%,
   100% {
     opacity: 0;
@@ -738,13 +777,16 @@ footer {
   0% {
     transform: scale(0.8);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0.8);
   }
 }
+
 .insta-video {
   position: absolute;
   top: 0;
@@ -757,27 +799,29 @@ footer {
   text-align: left;
   direction: ltr;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,2989d8+38&0.7+0,0+37 */
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(40, 133, 210, 0) 37%,
-    rgba(41, 137, 216, 0) 38%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(40, 133, 210, 0) 37%,
+      rgba(41, 137, 216, 0) 38%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   color: #fff;
   font-weight: 600;
   text-decoration: none;
 }
+
 .insta-video:hover {
   color: #fff;
   text-decoration: underline;
 }
+
 .video-logo {
   width: 48px;
   background: #fff;
   border-radius: 30px;
   margin: 7px;
 }
+
 .to-top {
   bottom: 17px;
   right: 10px !important;
@@ -786,6 +830,7 @@ footer {
   color: #fff;
   z-index: 20;
 }
+
 /* Responsive Adjustments */
 @media (max-width: 767px) {
   .hero-section h1 {
@@ -795,54 +840,71 @@ footer {
   .hero-section h2 {
     font-size: 1.5rem;
   }
+
   .h-lg-100 {
     height: auto !important;
   }
+
   .pulsating-circle {
     left: auto !important;
     right: -32px !important;
     top: 50%;
   }
+
   .team-border-media {
     border-right: 5px solid var(--primary-green) !important;
   }
+
   .insta-video {
     height: 20%;
   }
-  #salam .image-container.h-100, #yasser .image-container.h-100{
+
+  #salam .image-container.h-100,
+  #yasser .image-container.h-100,
+  #ammar .image-container.h-100,
+  #feras .image-container.h-100,
+  #wael .image-container.h-100,
+  #zayd .image-container.h-100 {
     height: 300px !important
   }
 
 }
+
 @media (min-width: 769px) {
   .h-lg-100 {
     height: 100% !important;
   }
 }
+
 @media (max-width: 991px) {
+
   .carousel,
   .sham-video {
     width: 50%;
     text-align: center;
     margin: 0 auto;
   }
+
   .navbar-light .navbar-nav .nav-link {
     color: #333 !important;
     font-weight: 500;
     transition: color 0.3s ease;
   }
+
   #heroCarousel.carousel {
     width: 100%;
     text-align: center;
     margin: 0 auto;
   }
-      .video-overlay {
-        position: absolute;
-        top: 57%;
-        left: 6%;
-        width: 369px;
-        z-index: 2;
-    }
+
+  .video-overlay {
+    position: absolute;
+    top: 57%;
+    left: 6%;
+    width: 369px;
+    z-index: 2;
+  }
+
   .slider-content {
     max-width: 70%;
     bottom: auto;
@@ -851,6 +913,7 @@ footer {
 }
 
 @media (max-width: 575px) {
+
   .carousel,
   .sham-video {
     width: 100%;
